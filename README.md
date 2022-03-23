@@ -1,3 +1,3 @@
 # Interactive pricing component
-
-![Design preview for the Interactive pricing component coding challenge](./design/desktop-preview.jpg)
+<h2><a href="https://arbaz93.github.io/3-column-preview-card-component/">Click here to check it out!</a></h2>
+<img src="./design/desktop-preview.jpg">
