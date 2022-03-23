@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Interactive pricing component</title>
+    <!-- Font styles -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./slider.css" />
+    <link rel="stylesheet" href="./toggle.css" />
+
+    <!-- JS -->
+    <script src="./slider.js" defer></script>
+  </head>
+  <body>
+    <main>
+      <div class="bg-cirlce-pattern">
+        <h1 class="fs-200 fw-200 text-dark">Simple, traffic-based pricing</h1>
+        <h2 class="fs-100 text-grayish-blue">
+          Sign-up for our 30-day trial. No credit card required.
+        </h2>
+      </div>
+
+      <section class="container bg-white">
+        <div class="grid">
+          <p class="text-grayish-blue fs-100 fw-200 uppercase">
+            100K Pageviews
+          </p>
+          <div class="slider">
+            <input
+              type="range"
+              min="0"
+              max="32"
+              value="16"
+              oninput="updateStatus()"
+            />
+          </div>
+          <p class="fs-100 fw-200 text-grayish-blue">
+            <span class="price text-dark">$16.00</span> /month
+          </p>
+        </div>
+
+        <div class="billing flex">
+          <p class="fs-100 text-grayish-blue">Monthly Billing</p>
+          <div>
+
+            <label class="toggle">
+              <input type="checkbox" />
+              <span></span>
+            </label>
+          </div>
+          <p class="fs-100 text-grayish-blue">
+            Yearly Billing
+            <span class="discount bg-light-red text-red">-25% <span>discount</span>
+          </p>
+        </div>
+
+        <div class="submit flex">
+          <div>
+            <p class="fs-100 text-grayish-blue">
+              <span> <img src="./images/icon-check.svg" alt="check" /></span>
+              Unlimited websites
+            </p>
+            <p class="fs-100 text-grayish-blue">
+              <span><img src="./images/icon-check.svg" alt="check" /></span>
+              100% data ownership
+            </p>
+            <p class="fs-100 text-grayish-blue">
+              <span> <img src="./images/icon-check.svg" alt="check" /></span>
+              Email reports
+            </p>
+          </div>
+          <button class="submit-button">Start my trial</button>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
